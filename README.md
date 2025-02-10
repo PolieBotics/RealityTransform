@@ -30,6 +30,12 @@ No labeled data or explicit calibration is needed: the system learns purely from
 
 This trains a function from the camera view back to the projector domain. **By itself**, Pix2PixHD is a single transformation—unstable if placed in a direct feedback loop.
 
+The cropped, resized step response and resultant predicted emission are illustrated below.
+
+| [<img src="images/iter_001_A_input.png" width="300">](images/iter_001_A_input.png) | [<img src="images/iter_001_A_output.png" width="300">](images/iter_001_A_output.png) |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| `Step Response`                               | `Resultant Predicted Emission`                              |
+
 ---
 
 ## 3.5. Optional Animation & Off-Line Styling
@@ -39,6 +45,13 @@ Before moving to real-time control, you can use the trained generator’s predic
 - **Any offline pipeline** that modifies or stylizes the emitted image.
 
 This produces **non-interactive** animations or edited frames for a static scene—no projector feedback involved. You simply pass the generator’s output to your creative or style framework, then (if desired) project the final frames afterward.
+<figure style="text-align: center;">
+  <a href="images/sd_controlnet.png">
+    <img src="images/sd_controlnet.png" width="600" alt="sd_controlnet image">
+  </a>
+  <figcaption>Pix2PixHD's predicted Emmission from the step response being input to ControlNet</figcaption>
+</figure>
+
 
 ---
 
