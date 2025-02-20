@@ -1,7 +1,7 @@
 # Unsupervised Projector–Camera Mapping with Pix2PixHD
 
 **Abstract**  
-This repository demonstrates an **unsupervised** workflow for learning how a scene transforms projected images into camera observations—akin to identifying a transfer function in control theory. We capture “emission”–“recording” pairs automatically, train a high-resolution Pix2PixHD model to approximate the scene’s inverse response, and then leverage external style pipelines (ComfyUI, Stable Diffusion, etc.) to stabilize or creatively guide the final appearance.  
+This repository demonstrates an **unsupervised** workflow for learning how a scene transforms camera observations into projected images—akin to identifying a transfer function in control theory. We capture “emission”–“recording” pairs automatically, train a high-resolution Pix2PixHD model to approximate the scene’s inverse response, and then leverage external style pipelines (ComfyUI, Stable Diffusion, etc.) to stabilize or creatively guide the final appearance.  
 
 No labeled data or explicit calibration is needed: the system learns purely from raw projector–camera interactions. Below are the main steps, plus optional paths for static animations or fully interactive feedback loops.
 
@@ -76,7 +76,10 @@ This pipeline can also bootstrap a reinforcement learning (RL) agent: by using P
 
 ## Sample Outputs
 
-Below are clickable thumbnails from the `samples/` directory. Images were captures with an industrial camera, and may appear dull to the human eye. Video the Reality Transform captured with conventional cameras is available on social media. Click any image to enlarge:
+Below are clickable thumbnails from the `samples/` directory. Images were captures with an industrial camera, and may appear dull to the human eye. Video the Reality Transform captured with conventional cameras is available on social media, e.g. [Reddit](https://www.reddit.com/r/PoliePals/) and [X](https://x.com/poliebotics).
+
+
+Click any image to enlarge:
 
 | [<img src="samples/20250208_222930_iter_001.png" width="160">](samples/20250208_222930_iter_001.png) | [<img src="samples/20250208_225430_iter_001.png" width="160">](samples/20250208_225430_iter_001.png) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
