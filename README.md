@@ -1,7 +1,8 @@
 # Unsupervised Projector–Camera Mapping with Pix2PixHD
 
 **Abstract**  
-This repository demonstrates an **unsupervised** workflow for learning how a scene transforms camera observations into projected images—akin to identifying a transfer function in control theory. We capture “emission”–“recording” pairs automatically, train a high-resolution Pix2PixHD model to approximate the scene’s inverse response, and then leverage external style pipelines (ComfyUI, Stable Diffusion, etc.) to stabilize or creatively guide the final appearance.  
+The Reality Transform superimposes dynamic, adaptive projections onto surfaces—whether people, buildings or household items—generating vibrant son-et-lumière experiences. Machine learning and sensor feedback let the system continuously refine brightness, color, and patterns, turning physical spaces into interactive storytelling platforms.
+This repository demonstrates an **unsupervised** workflow for learning how a scene transforms camera observations into styled projected images—akin to identifying a transfer function in control theory. We capture “emission”–“recording” pairs automatically, train a high-resolution Pix2PixHD model to approximate the scene’s inverse response, and then leverage external style pipelines (ComfyUI, Stable Diffusion, etc.) to stabilize or creatively guide the final appearance.  
 
 No labeled data or explicit calibration is needed: the system learns purely from raw projector–camera interactions. Below are the main steps, plus optional paths for static animations or fully interactive feedback loops.
 
